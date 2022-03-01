@@ -16,6 +16,38 @@ export function composeSendSMSRequestAxiosConfig(
   }
 }
 
+export interface RestMessagePart {
+  currency?: string
+  deliveryState?: string
+  doneDate?: string
+  errorCode?: string
+  partId?: string
+  price?: string
+  priceEffective?: string
+  sentDate?: string
+  statusText?: string
+}
+
+export interface RestMessageResponse {
+  doneDate?: string
+  errorCode?: string
+  errorReason?: string
+  from?: string
+  href?: string
+  mccmnc?: string
+  parts?: RestMessagePart[]
+  overallPrice?: string
+  priceEffective?: string
+  reference?: string
+  requestId: string
+  sentDate?: string
+  size?: number
+  status?: string
+  submitDate?: string
+  to?: string
+  ttid?: string
+}
+
 export interface SmsMessage {
   to: string
   from: string

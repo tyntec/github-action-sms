@@ -2,7 +2,7 @@
   "name": "tyntec-github-action-sms",
   "version": "0.0.0",
   "private": true,
-  "description": "Block the given number of milliseconds",
+  "description": "Send an SMS using tyntec SMS API and block the given number of milliseconds",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
@@ -24,13 +24,13 @@
   "author": "tyntec GmbH",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.6.0"
+    "@actions/core": "^1.6.0",
+    "axios": "^0.26.0"
   },
   "devDependencies": {
     "@types/node": "^16.10.5",
     "@typescript-eslint/parser": "^5.8.1",
     "@vercel/ncc": "^0.31.1",
-    "axios": "^0.26.0",
     "eslint": "^7.32.0",
     "eslint-plugin-github": "^4.3.2",
     "eslint-plugin-jest": "^25.3.2",
