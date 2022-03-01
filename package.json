@@ -2,7 +2,7 @@
   "name": "tyntec-github-action-sms",
   "version": "0.0.0",
   "private": true,
-  "description": "Send an SMS using tyntec SMS API and block 500 milliseconds",
+  "description": "Send an SMS using tyntec SMS API",
   "main": "lib/main.js",
   "scripts": {
     "build": "tsc",

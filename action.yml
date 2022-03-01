@@ -1,5 +1,5 @@
 name: 'tyntec SMS'
-description: 'Send an SMS using tyntec SMS API and block 500 milliseconds'
+description: 'Send an SMS using tyntec SMS API'
 author: 'tyntec GmbH'
 inputs:
   fromPhoneNumber:

@@ -4,7 +4,7 @@
 
 # tyntec SMS GitHub Action
 
-This action sends an SMS using tyntec SMS API and blocks 500 milliseconds.
+This action sends an SMS using tyntec SMS API.
 
 ## Inputs
 
