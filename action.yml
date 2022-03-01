@@ -1,11 +1,14 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'tyntec SMS'
+description: 'Block the given number of milliseconds'
+author: 'tyntec GmbH'
 inputs:
-  milliseconds: # change this
+  milliseconds:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'The number of milliseconds to block'
+    default: '500'
+outputs:
+  time:
+    description: 'The time the action stopped'
 runs:
   using: 'node12'
   main: 'dist/index.js'
