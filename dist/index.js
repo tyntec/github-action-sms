@@ -69,10 +69,9 @@ function run() {
         }
         core.setOutput('requestId', response.data.requestId);
         try {
-            const ms = core.getInput('milliseconds');
-            core.debug(`Waiting ${ms} milliseconds ...`); // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
+            core.debug(`Waiting 500 milliseconds ...`); // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
             core.debug(new Date().toTimeString());
-            yield (0, wait_1.wait)(parseInt(ms, 10));
+            yield (0, wait_1.wait)(500);
             core.debug(new Date().toTimeString());
         }
         catch (error) {

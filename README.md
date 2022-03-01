@@ -4,7 +4,7 @@
 
 # tyntec SMS GitHub Action
 
-This action sends an SMS using tyntec SMS API and blocks the given number of milliseconds.
+This action sends an SMS using tyntec SMS API and blocks 500 milliseconds.
 
 ## Inputs
 
@@ -19,10 +19,6 @@ This action sends an SMS using tyntec SMS API and blocks the given number of mil
 ### `message`
 
 **Required** The message you want to send.
-
-### `milliseconds`
-
-**Required** The number of milliseconds to block.
 
 ## Environment variables (secrets)
 
@@ -44,7 +40,6 @@ with:
   fromPhoneNumber: tyntec
   toPhoneNumber: +123456789
   message: Hello world!
-  milliseconds: 1000
 env:
   TYNTEC_API_KEY: ${{ secrets.TYNTEC_API_KEY }}
 ```

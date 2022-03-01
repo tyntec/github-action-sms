@@ -1,5 +1,5 @@
 name: 'tyntec SMS'
-description: 'Send an SMS using tyntec SMS API and block the given number of milliseconds'
+description: 'Send an SMS using tyntec SMS API and block 500 milliseconds'
 author: 'tyntec GmbH'
 inputs:
   fromPhoneNumber:
@@ -11,10 +11,6 @@ inputs:
   message:
     required: true
     description: 'The message you want to send'
-  milliseconds:
-    required: true
-    description: 'The number of milliseconds to block'
-    default: '500'
 outputs:
   requestId:
     description: 'The unique identifier provided for each messaging request'
