@@ -36,10 +36,6 @@ This action sends an SMS using tyntec SMS API and blocks the given number of mil
 
 The unique identifier provided for each messaging request.
 
-### `time`
-
-The time the action stopped.
-
 ## Example usage
 
 ```yaml
