@@ -56,17 +56,6 @@ Build the typescript and package it for distribution
 $ npm run build && npm run package
 ```
 
-Run the tests :heavy_check_mark:  
-```bash
-$ npm test
-
- PASS  ./main.test.js
-  ✓ throws invalid number (3ms)
-  ✓ wait 500 ms (504ms)
-
-...
-```
-
 ## Publish to a distribution branch
 
 Actions are run from GitHub repos so we will checkin the packed dist folder. 
