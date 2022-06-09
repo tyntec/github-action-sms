@@ -1,14 +1,19 @@
 name: 'tyntec SMS'
-description: 'Block the given number of milliseconds'
+description: 'Send an SMS using tyntec SMS API'
 author: 'tyntec GmbH'
 inputs:
-  milliseconds:
+  fromPhoneNumber:
     required: true
-    description: 'The number of milliseconds to block'
-    default: '500'
+    description: 'The identification of the party sending the SMS. It can either be a phone number in the international format or an alphanumeric identifier with up to 11 characters.'
+  toPhoneNumber:
+    required: true
+    description: 'The phone number to send the SMS to in the international phone format E.164'
+  message:
+    required: true
+    description: 'The message you want to send'
 outputs:
-  time:
-    description: 'The time the action stopped'
+  requestId:
+    description: 'The unique identifier provided for each messaging request'
 runs:
   using: 'node12'
   main: 'dist/index.js'
