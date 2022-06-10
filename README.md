@@ -35,7 +35,7 @@ The unique identifier provided for each messaging request.
 ## Example usage
 
 ```yaml
-uses: tyntec/github-action-sms@main
+uses: tyntec/github-action-sms@v1
 with:
   fromPhoneNumber: tyntec
   toPhoneNumber: +123456789
