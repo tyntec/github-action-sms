@@ -1,6 +1,6 @@
 {
   "name": "tyntec-github-action-sms",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Send an SMS using tyntec SMS API",
   "main": "lib/main.js",
